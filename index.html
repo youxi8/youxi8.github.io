@@ -2,76 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Title</title>
+    <title>正在加载代码...</title>
     <link rel="shortcut icon" href="https://www.hualigs.cn/favicon.ico?v=2.1.6"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.9, maximum-scale=0.9, user-scalable=no" />
-    <style type="text/css">
-        body{
-            padding:0;
-            margin:0;
-            overflow-y:hidden;
-        }
-        iframe{
-            border:none;
-        }
-        .more{
-            width:60px;height: 30px;display: inline-block;
-            position:fixed;right:30px;top:30px;
-
-            background:#00000024;
-            text-align: center;
-            line-height: 30px;
-            border-radius:10px;
-        }
-        a{text-decoration: none;color:#333;}
-        a:hover, a:visited, a:link, a:active {
-            color:white;
-        }
-        .more-img{
-            position: fixed;
-            /* width: 80px; */
-            /* height: 80px; */
-        }
-        .more-img-shu{
-            right: 0;
-            top: 160px;
-        }
-        .more-img-heng{
-            right: 0;
-            bottom: 0;
-            transform:rotate(90deg);
-        }
-        .more-img img{
-            width: 80px;
-            height: 80px;
-        }
-    </style>
-    <script src="https://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script>var a=location.search.substr(1).split("&")[0];document.location.href = 'http://accct.cn/' + a;</script>
 </head>
 <body>
-<div id="box">
-<iframe id="iframe" frameborder="0" src="" style="width:100%;"></iframe>
-</div>
-
-
-<script>
-    var a=location.search.substr(1).split("&")[0];
-    $("#iframe").attr("src","https://web-360.20it.cn/" + a);
-	
-	var data_type = "{$data_type}";
-    window.onerror=function(){return true;} 
-    $(function(){ 
-      headerH = 0;  
-      var h=$(window).height();
-      $("#iframe").height((h-headerH)+"px"); 
-      //$.get("/api/readOnce?id={$data.id}&type=" + data_type);
-    });
-    function test() {
-        //href*=html表示属性href的值在任意位置包含'baidu'
-    	$("div[href*=doubleclick]").hide();
-    }
-    setTimeout('test()', 100);
-</script>
-
 </body>
 </html>
